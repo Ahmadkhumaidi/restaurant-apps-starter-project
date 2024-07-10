@@ -1,0 +1,169 @@
+@media (min-width: 1200px) {
+  .hero img {
+    min-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero img{
+    width: 750px;
+  }
+  .restaurant-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #restaurant__poster {
+    max-width: 100%; 
+  }
+  
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+
+  .nav-drawer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #333;
+    z-index: 999;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .nav-drawer.open {
+    display: block;
+    width: 250px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+  }
+}
+
+@media (pointer: coarse) {
+  .nav-links li a,
+  .hamburger-menu,
+  button,
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"] {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero img{
+    width: 475px;
+  }
+  .restaurant-list {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+  .restaurant-item{
+    width: auto;
+  }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+
+  .nav-drawer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #333;
+    z-index: 999;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .nav-drawer.open {
+    display: block;
+    width: 250px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero img{
+    width: 325px;
+  }
+  .restaurant-list {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+  .restaurant-item{
+    width: auto;
+  }
+  #restaurant-item__header__poster{
+    min-width: 150px;
+  }
+}
